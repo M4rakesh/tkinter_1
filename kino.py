@@ -24,7 +24,7 @@ def load_kino_nosaukums():
         cursor = conn.cursor("SELECT nosaukums FROM kinoteka")
         print("aa")
         nosaukums=[]
-        kino_all=cursor.fetchall()
+        kino_all=cursor.fetchone()
         print("aaa")
         for kino in kino_all:
             nosaukums.append(kino[0])
